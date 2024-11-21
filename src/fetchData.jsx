@@ -2,9 +2,9 @@ import { createClient } from 'contentful';
 import { useState, useEffect } from 'react';
 
 const client = createClient({
-  space: '8hjeisht16s3',
+  space: import.meta.env.VITE_SPACE_ID,
   environment: 'master',
-  accessToken: 'UoNmUGx_r4Dz8X9uWXom6USeMRnpKw6vCN8-ckQ44D4',
+  accessToken: import.meta.env.VITE_API_KEY,
 });
 
 export const useFetchData = () => {

@@ -2,6 +2,7 @@ import { useFetchData } from './fetchData';
 
 const Projects = () => {
   const { isLoading, data } = useFetchData();
+  console.log(data);
 
   if (isLoading) {
     return (
